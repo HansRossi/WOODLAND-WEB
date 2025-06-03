@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Woodland s.r.o. - Výroba dubových stolů</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f1ed;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 15px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background: #3e2723;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd180;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #3e2723;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #6d4c41;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .footer {
+      background: #3e2723;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .hero-text {
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .cta {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .cta a {
+      padding: 15px 25px;
+      background: #6d4c41;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #8d6e63;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="hero-text">Woodland s.r.o. – Dubové stoly na míru</h1>
+  </header>
+  <nav>
+    <a href="#ceny">Ceník</a>
+    <a href="#sluzby">Služby</a>
+    <a href="#tym">Tým</a>
+    <a href="#plan">Výrobní plán</a>
+  </nav>
+
+  <section id="ceny">
+    <h2>Ceník dubových stolů na míru</h2>
+    <table>
+      <tr>
+        <th>Rozměry (délka x šířka)</th>
+        <th>Cena (Kč)</th>
+        <th>Popis</th>
+      </tr>
+      <tr>
+        <td>do 120 x 80 cm</td>
+        <td>10 000 – 12 000</td>
+        <td>Malý jednací nebo jídelní stůl</td>
+      </tr>
+      <tr>
+        <td>121 x 80 až 180 x 90 cm</td>
+        <td>12 000 – 18 000</td>
+        <td>Střední jídelní stůl</td>
+      </tr>
+      <tr>
+        <td>181 x 90 až 240 x 100 cm</td>
+        <td>18 000 – 25 000</td>
+        <td>Velký jídelní stůl nebo pracovní</td>
+      </tr>
+      <tr>
+        <td>Na míru nad 240 x 100 cm</td>
+        <td>dle dohody</td>
+        <td>Extra velké nebo atypické tvary</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="sluzby">
+    <h2>Další služby a příplatky</h2>
+    <table>
+      <tr>
+        <th>Služba</th>
+        <th>Cena (Kč)</th>
+        <th>Popis</th>
+      </tr>
+      <tr>
+        <td>Povrchová úprava olejem</td>
+        <td>+1 500</td>
+        <td>Přírodní vzhled a ochrana dřeva</td>
+      </tr>
+      <tr>
+        <td>Povrchová úprava lakem</td>
+        <td>+2 500</td>
+        <td>Lesklý nebo matný ochranný lak</td>
+      </tr>
+      <tr>
+        <td>Zaoblení hran</td>
+        <td>+800</td>
+        <td>Zvýšený komfort a bezpečnost</td>
+      </tr>
+      <tr>
+        <td>Vyřezávání vzoru nebo loga</td>
+        <td>dle složitosti</td>
+        <td>Personalizace stolové desky</td>
+      </tr>
+      <tr>
+        <td>Dodání a montáž</td>
+        <td>800 – 2 000</td>
+        <td>Závisí na vzdálenosti a složitosti</td>
+      </tr>
+    </table>
+    <div class="cta">
+      <a href="#">Objednat stůl</a>
+    </div>
+  </section>
+
+  <section id="tym">
+    <h2>Náš tým a platy</h2>
+    <div class="team">
+      <div class="card">
+        <h3>Ředitel</h3>
+        <p>1 osoba – 65 000 Kč</p>
+      </div>
+      <div class="card">
+        <h3>Manažer</h3>
+        <p>1 osoba – 55 000 Kč</p>
+      </div>
+      <div class="card">
+        <h3>Personální</h3>
+        <p>1 osoba – 40 000 Kč</p>
+      </div>
+      <div class="card">
+        <h3>Sklad</h3>
+        <p>2 osoby – 2×25 000 Kč</p>
+      </div>
+      <div class="card">
+        <h3>Údržbář</h3>
+        <p>1 osoba – 30 000 Kč</p>
+      </div>
+      <div class="card">
+        <h3>Marketing</h3>
+        <p>Vedoucí + 2 pracovníci</p>
+      </div>
+      <div class="card">
+        <h3>Finance</h3>
+        <p>Vedoucí + 2 lidé</p>
+      </div>
+      <div class="card">
+        <h3>Dělníci</h3>
+        <p>6 lidí – výroba stolů</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>Plán pro tým výroby</h2>
+    <ul>
+      <li><strong>Plánování:</strong> Každé pondělí plán, rozdělení úkolů, komunikace.</li>
+      <li><strong>Organizování:</strong> Připrava materiálu, úklid po směně.</li>
+      <li><strong>Vedení:</strong> Podpora a motivace, oceňování týmové práce.</li>
+      <li><strong>Kontrola:</strong> Společná kontrola kvality, učení se z chyb.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Woodland s.r.o. – Koterov 663/41</p>
+  </footer>
+</body>
+</html>
